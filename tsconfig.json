@@ -19,7 +19,15 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react",
-    "typeRoots": ["./node_modules/@types", "./types.d.ts"]
+    "typeRoots": ["./node_modules/@types", "./types.d.ts"],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["packages/components/src/*"],
+      "@pc/*": ["packages/pc/src/*"],
+      "@mobile/*": ["packages/mobile/src/*"],
+      "@shared/*": ["packages/shared/src/*"]
+    }
   },
   "include": [
     "packages/*/src/**/*",
@@ -29,6 +37,13 @@
   "exclude": [
     "node_modules",
     "packages/*/dist",
-    "packages/*/lib"
+    "packages/*/lib",
+    "packages/*/build"
+  ],
+  "references": [
+    { "path": "./packages/components" },
+    { "path": "./packages/pc" },
+    { "path": "./packages/mobile" },
+    { "path": "./packages/shared" }
   ]
 } 
