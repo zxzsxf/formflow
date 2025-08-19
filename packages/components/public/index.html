@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormFlow 组件示例</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f5f5f5;
+        }
+        
+        #root {
+            min-height: 100vh;
+        }
+        
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="loading">正在加载 FormFlow 组件...</div>
+    </div>
+    
+    <!-- 引入React和ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- 引入Antd样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/antd@4.22.8/dist/antd.min.css">
+    
+    <!-- 引入Formily相关库 -->
+    <!-- <script src="https://unpkg.com/@formily/core@2.2.27/dist/formily.core.umd.js"></script>
+    <script src="https://unpkg.com/@formily/react@2.2.27/dist/formily.react.umd.js"></script>
+    <script src="https://unpkg.com/@formily/antd@2.2.27/dist/formily.antd.umd.js"></script> -->
+    
+    <!-- 引入示例代码 -->
+    <script src="./example.js"></script>
+</body>
+</html> 

@@ -1,0 +1,32 @@
+{
+  "name": "@formflow/shared",
+  "version": "1.0.0",
+  "description": "FormFlow共享工具包",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/lodash": "^4.14.199",
+    "rollup": "^3.29.4"
+  },
+  "engines": {
+    "node": "18.17.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@formflow/loader",
+  "version": "1.0.0",
+  "description": "FormFlow Webpack Loader插件",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "loader-utils": "3.2.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@types/node": "^18.17.1",
+    "rollup": "^3.29.4"
+  },
+  "engines": {
+    "node": "18.17.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

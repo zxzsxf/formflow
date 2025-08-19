@@ -1,0 +1,20 @@
+{
+  "name": "@formflow/docs",
+  "version": "1.0.0",
+  "description": "FormFlow文档",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vitepress": "^1.0.0-rc.4"
+  },
+  "devDependencies": {
+    "vue": "^3.3.4"
+  },
+  "engines": {
+    "node": "18.17.1"
+  }
+}
