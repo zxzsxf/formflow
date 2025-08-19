@@ -4,7 +4,7 @@ import { createForm, onFormValuesChange } from "@formily/core";
 import { toJS } from "@formily/reactive";
 import { withErrorBoundary } from "react-error-boundary";
 
-import {mockSchema} from "../mockSchema";
+import { mockSchema } from "../mockSchema";
 // @ts-ignore
 import * as components from "../../../components/src/index";
 
