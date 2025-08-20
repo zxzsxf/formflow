@@ -81,12 +81,12 @@ export const mockSchema = {
             },
             customForm: {
                 name: 'customForm',
-                title: '',
+                title: '选择组件2',
                 type: 'object',
                 properties: {
                     Select_0194685988854260: {
                         name: 'Select_0194685988854260',
-                        title: '选择组件',
+                        title: '选择组件2',
                         required: true,
                         readOnly: false,
                         type: 'array',

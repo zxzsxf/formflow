@@ -184,7 +184,7 @@ const ExampleForm = () => {
   };
 
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    <div>
       
       <FlowFormDemo 
         formRef={formRef}
@@ -192,77 +192,7 @@ const ExampleForm = () => {
           console.log('表单数据变化:', values);
         }}
       />
-      
-      <div style={{ 
-        marginTop: '20px', 
-        textAlign: 'center',
-        display: 'flex',
-        gap: '10px',
-        justifyContent: 'center'
-      }}>
-        <button 
-          onClick={handleSubmit}
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#1890ff',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-        >
-          提交表单
-        </button>
-        
-        <button 
-          onClick={handleReset}
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#faad14',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-        >
-          重置表单
-        </button>
-        
-        <button 
-          onClick={handleGetValues}
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#52c41a',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-        >
-          获取数据
-        </button>
-      </div>
-      
-      <div style={{ 
-        marginTop: '20px', 
-        padding: '15px', 
-        backgroundColor: '#f5f5f5', 
-        borderRadius: '4px',
-        fontSize: '14px',
-        color: '#666'
-      }}>
-        <h4>使用说明：</h4>
-        <ul style={{ margin: '10px 0', paddingLeft: '20px' }}>
-          <li>填写表单信息，所有字段都有相应的验证规则</li>
-          <li>点击"提交表单"按钮提交数据</li>
-          <li>点击"重置表单"按钮清空所有输入</li>
-          <li>点击"获取数据"按钮查看当前表单数据</li>
-          <li>表单数据变化会实时输出到控制台</li>
-        </ul>
-      </div>
+
     </div>
   );
 };

@@ -11,7 +11,8 @@ export * from './components/RadioGroup';
 export * from './components/DatePicker';
 export * from './components/Switch';
 export * from './components/Upload';
-export * from './components/FormItem';
+// export * from './components/FormItem';
+export * from './components/form-item/form-item';
 export * from './components/Card';
 
 // 调试组件
