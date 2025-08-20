@@ -1,0 +1,61 @@
+@import (reference) './color/colors.less';
+
+@ef-prefix: 'ef';
+@theme: default;
+
+// 颜色
+@component-background: #fff;
+@input-bg: @component-background;
+
+@form-error-input-bg: @input-bg;
+@form-warning-input-bg: @input-bg;
+
+
+// 尺寸
+@font-size-base: 14px;
+@font-size-lg: @font-size-base + 2px;
+@font-size-sm: 12px;
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-width-base: 1px; // width of the border for a component
+
+@height-base: 20px;
+@height-lg: 40px;
+@height-sm: 24px;
+
+@form-item-margin-bottom: 24px;
+@form-item-options-margin-bottom: 16px;
+
+@outline-fade: 20%;
+
+// Outline
+@input-outline-offset: 0 0;
+@outline-blur-size: 0;
+@outline-width: 2px;
+@outline-color: @primary-color; // No use anymore
+@outline-fade: 20%;
+// 其他
+
+
+// mixins
+.hover(@color: @input-hover-border-color) {
+  border-color: @color;
+  border-right-width: @border-width-base;
+}
+.active(@borderColor: @primary-color; @hoverBorderColor: @primary-color-hover; @outlineColor: @primary-color-outline) {
+  & when (@theme = dark) {
+    border-color: @borderColor;
+  }
+  & when (not (@theme = dark) and not (@theme = variable)) {
+    border-color: @hoverBorderColor;
+  }
+  & when not (@theme = variable) {
+    box-shadow: @input-outline-offset @outline-blur-size @outline-width
+      fade(@borderColor, @outline-fade);
+  }
+  & when (@theme = variable) {
+    border-color: @hoverBorderColor;
+    box-shadow: @input-outline-offset @outline-blur-size @outline-width @outlineColor;
+  }
+  border-right-width: @border-width-base;
+  outline: 0;
+}

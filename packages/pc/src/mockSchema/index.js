@@ -21,7 +21,7 @@ export const mockSchema = {
                         deletable: true,
                     },
                 },
-                // 'x-decorator': 'ItemDecorator',
+                'x-decorator': 'FormItem',
                 'x-decorator-props': {
                     type: 'IndepItem',
                 },
@@ -74,7 +74,7 @@ export const mockSchema = {
                         type: 'void',
                     },
                 },
-                // 'x-decorator': 'ItemDecorator',
+                'x-decorator': 'FormItem',
                 'x-decorator-props': {
                     type: 'IndepItem',
                 },
@@ -129,7 +129,7 @@ export const mockSchema = {
                         type: 'object',
                     },
                 },
-                // 'x-decorator': 'ItemDecorator',
+                'x-decorator': 'FormItem',
                 'x-decorator-props': {
                     type: 'IndepItem',
                 },

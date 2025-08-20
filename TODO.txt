@@ -3,6 +3,7 @@ feat：playground搭建
 
 2. formflow/pc
 feat：FormLayout
+feat：FormItem-decorater
 feat：FormPropsProvider
 feat：FormSchemaProvider
 feat：表单回显能力
