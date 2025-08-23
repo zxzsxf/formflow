@@ -2,6 +2,10 @@ TODO：
 MicroApp测试工程搭建
 流水线搭建
 lpm搭建
+云搭 + go
+云搭：小程序 + 表单
+go：远程组件 + 大屏
+
 
 1. formflow/example
 feat：playground搭建
@@ -31,3 +35,5 @@ feat：webpack插件
 
 7.formflow/shared
 8.formflow/docs
+
+
