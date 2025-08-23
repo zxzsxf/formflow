@@ -47,7 +47,7 @@ const DatePickerComponent: React.FC<DatePickerProps> = (props) => {
     <AntDatePicker
       {...props}
       // @ts-ignore
-      value={field?.value ? dayjs(field.value) : undefined}
+      value={field?.value ? field.value : undefined}
       onChange={handleChange}
       onBlur={handleBlur}
       onFocus={handleFocus}

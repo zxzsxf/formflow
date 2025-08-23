@@ -2135,6 +2135,7 @@ __metadata:
     "@rollup/plugin-typescript": ^11.1.6
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
+    constate: ^3.3.0
     react: ^18.2.0
     react-dom: ^18.2.0
     rollup: ^3.29.4
@@ -5600,6 +5601,15 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
+  languageName: node
+  linkType: hard
+
+"constate@npm:^3.3.0":
+  version: 3.3.3
+  resolution: "constate@npm:3.3.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 019057de1b5f32da955ad68c90b808ded72a806ec5b2d33510eebbf06c519886760360ac834aa6e18391128228d56848f6f7477e6ef8c354a00199bad6e4d77f
   languageName: node
   linkType: hard
 
