@@ -4,7 +4,7 @@ import { createForm, onFormValuesChange } from "@formily/core";
 import { toJS } from "@formily/reactive";
 import { withErrorBoundary } from "react-error-boundary";
 
-import { mockSchema } from "../mockSchema";
+// import { mockSchema } from "../mockSchema";
 // @ts-ignore
 import * as components from "../../../components/src/index";
 
@@ -51,7 +51,7 @@ export const createFlowForm = <T extends {} = any>(
       return (
         <div className="">
           <Form labelCol={6} wrapperCol={12} form={form}>
-            <SchemaField schema={formSchema?.schemas || mockSchema?.schemas} />
+            <SchemaField schema={formSchema?.schemas || {}} />
             {props.children}
           </Form>
         </div>

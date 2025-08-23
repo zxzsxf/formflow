@@ -3,4 +3,4 @@ export * from './components/PCForm';
 export * from './components/PCFormField';
 
 // 默认导出
-export { default as PCFlowForm } from './components/PCFlowForm'; 
+export { default as PCFlowForm } from './components/PCFormFlow'; 

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { createFlowForm } from '../../../pc/src/hooks/create-form-flow';
+// import { createFlowForm } from '../../../pc/src/hooks/create-form-flow';
 
 // 定义表单的 schema
 const formSchema = {
@@ -151,7 +151,7 @@ const formSchema = {
   }
 };
 
-const FlowFormDemo = createFlowForm({});
+// const FlowFormDemo = createFlowForm({});
 
 const ExampleForm = () => {
   const formRef = useRef<any>(null);
@@ -186,12 +186,12 @@ const ExampleForm = () => {
   return (
     <div>
       
-      <FlowFormDemo 
+      {/* <FlowFormDemo 
         formRef={formRef}
         onChange={(values: any) => {
           console.log('表单数据变化:', values);
         }}
-      />
+      /> */}
 
     </div>
   );

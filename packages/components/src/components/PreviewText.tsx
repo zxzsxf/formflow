@@ -4,7 +4,7 @@ import { Typography } from 'antd';
 const { Text } = Typography;
 
 export const PreviewText = {
-  Input: ({ value }: { value?: any }) => {
+  Input: ({ value }: { value: any }) => {
     return <Text>{value || '-'}</Text>;
   },
   
