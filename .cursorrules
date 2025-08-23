@@ -1,0 +1,44 @@
+# FlowForm 项目 Cursor 规则配置
+
+## 项目基础信息
+- 项目名称: FlowForm - 表单流程管理工具
+- Node.js 版本: 18.17.1 (必须使用此版本)
+- 包管理器: Yarn (使用 yarn.lock)
+- 项目类型: TypeScript + React 组件库
+- 构建工具: Rollup + Lerna (monorepo)
+
+## 开发环境要求
+- 使用控制台前必须先切换到 Node.js 18.17.1 版本
+- 推荐使用 nvm 或 nvm-windows 管理 Node.js 版本
+- 安装依赖使用: `yarn install`
+- 启动开发环境使用: `yarn dev`
+
+## 代码规范
+- 使用 TypeScript 严格模式
+- 遵循 ESLint 规则配置
+- React 组件使用函数式组件 + Hooks
+- JSX 语法，无需手动导入 React
+- 组件文件使用 .tsx 扩展名
+- 样式文件使用 .less 扩展名
+
+## 项目结构
+- packages/components: 核心组件库
+- packages/pc: PC端组件
+- packages/mobile: 移动端组件  
+- packages/shared: 共享工具和类型
+- packages/cli: 命令行工具
+- packages/loader: 加载器
+
+## 开发命令
+- `yarn bootstrap`: 初始化所有包
+- `yarn build`: 构建所有包
+- `yarn dev`: 开发模式
+- `yarn test`: 运行测试
+- `yarn lint`: 代码检查
+- `yarn clean`: 清理构建文件
+
+## 注意事项
+- 这是一个 monorepo 项目，使用 Lerna 管理
+- 修改组件后需要重新构建
+- 确保 TypeScript 配置中的路径映射正确
+- 组件开发遵循设计系统规范

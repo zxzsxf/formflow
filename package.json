@@ -19,7 +19,9 @@
     "dev": "lerna run dev",
     "test": "lerna run test",
     "lint": "lerna run lint",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "check-env": "node scripts/check-env.js",
+    "predev": "npm run check-env"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
