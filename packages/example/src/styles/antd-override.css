@@ -1,0 +1,6 @@
+/* 覆盖 antd 样式导入问题 */
+/* 这里可以导入编译后的 antd CSS 文件 */
+@import "../../../node_modules/antd/dist/antd.css";
+
+/* 或者使用 CDN 版本 */
+/* @import "https://cdn.jsdelivr.net/npm/antd@4.22.8/dist/antd.css"; */
