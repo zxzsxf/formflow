@@ -22,4 +22,4 @@ export * from './components/FieldDebug';
 export * from './components/PreviewText';
 
 // 默认导出
-export { default as FlowForm } from './components/FlowForm'; 
+export { default as FlowForm } from './components/FormFlow'; 
