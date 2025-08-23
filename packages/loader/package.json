@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/loader",
+  "name": "@flowform/loader",
   "version": "1.0.0",
-  "description": "FormFlow Webpack Loader插件",
+  "description": "FlowForm Webpack Loader插件",
   "main": "dist/index.js",
   "files": [
     "dist"

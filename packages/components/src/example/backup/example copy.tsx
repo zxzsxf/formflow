@@ -30,7 +30,7 @@ const ExampleForm = () => {
   return (
     // <FormProvider form={form}>
     //   <Form onAutoSubmit={handleSubmit} onAutoSubmitFailed={handleSubmitFailed}>
-    //     <h2>FormFlow 组件示例</h2>
+    //     <h2>FlowForm 组件示例</h2>
         
     //     {/* 基础输入组件 */}
     //     <FormItem label="姓名" name="name" required>
@@ -133,7 +133,7 @@ const ExampleForm = () => {
     // </FormProvider>
     <FormProvider form={form}>
     <Form onAutoSubmit={handleSubmit} onAutoSubmitFailed={handleSubmitFailed}>
-      <h2>FormFlow 组件示例</h2>
+      <h2>FlowForm 组件示例</h2>
       <FormItem label="姓名" name="name" required>
           <Input placeholder="请输入姓名" />
           {/* <FieldDebug name="name" /> */}

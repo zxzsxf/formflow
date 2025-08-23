@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/components",
+  "name": "@flowform/components",
   "version": "1.0.0",
-  "description": "FormFlow组件库",
+  "description": "FlowForm组件库",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

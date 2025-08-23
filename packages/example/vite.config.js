@@ -7,16 +7,16 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-      '@formflow/pc': resolve(__dirname, '../pc/src'),
-      '@formflow/components': resolve(__dirname, '../components/src'),
-      '@formflow/mobile': resolve(__dirname, '../mobile/src'),
-      '@formflow/shared': resolve(__dirname, '../shared/src'),
-      '@formflow/utils': resolve(__dirname, '../utils/src'),
-      '@formflow/hooks': resolve(__dirname, '../hooks/src'),
-      '@formflow/types': resolve(__dirname, '../types/src'),
-      '@formflow/mockSchema': resolve(__dirname, '../mockSchema/src'),
-      '@formflow/example': resolve(__dirname, '../example/src'),
-      '@formflow/editor': resolve(__dirname, '../editor/src'),
+      '@flowform/pc': resolve(__dirname, '../pc/src'),
+      '@flowform/components': resolve(__dirname, '../components/src'),
+      '@flowform/mobile': resolve(__dirname, '../mobile/src'),
+      '@flowform/shared': resolve(__dirname, '../shared/src'),
+      '@flowform/utils': resolve(__dirname, '../utils/src'),
+      '@flowform/hooks': resolve(__dirname, '../hooks/src'),
+      '@flowform/types': resolve(__dirname, '../types/src'),
+      '@flowform/mockSchema': resolve(__dirname, '../mockSchema/src'),
+      '@flowform/example': resolve(__dirname, '../example/src'),
+      '@flowform/editor': resolve(__dirname, '../editor/src'),
       // 添加 antd 路径别名
       '~antd': resolve(__dirname, '../../node_modules/antd'),
     }

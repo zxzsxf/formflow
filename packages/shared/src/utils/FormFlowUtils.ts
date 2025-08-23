@@ -2,7 +2,7 @@ import { FormField, FormData, FormState } from '../types/formTypes';
 import { createInitialFormState, updateFormData, validateForm } from './formUtils';
 import { validateField } from './validationUtils';
 
-export default class FormFlowUtils {
+export default class FlowFormUtils {
   private fields: FormField[];
   private state: FormState;
 

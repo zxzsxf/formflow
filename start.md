@@ -1,4 +1,4 @@
-# FormFlow 项目启动指南
+# FlowForm 项目启动指南
 
 ## 🚀 快速开始
 
@@ -36,7 +36,7 @@ nvm use 18.17.1
 
 ```bash
 git clone <your-repository-url>
-cd formflow
+cd flowform
 ```
 
 ### 2. 安装依赖
@@ -55,14 +55,14 @@ yarn install
 npx lerna list
 
 # 应该看到类似输出：
-# @formflow/cli
-# @formflow/components
-# @formflow/docs
-# @formflow/pc
-# @formflow/mobile
-# @formflow/loader
-# @formflow/shared
-# @formflow/example
+# @flowform/cli
+# @flowform/components
+# @flowform/docs
+# @flowform/pc
+# @flowform/mobile
+# @flowform/loader
+# @flowform/shared
+# @flowform/example
 ```
 
 ## 🛠️ 开发工作流
@@ -74,8 +74,8 @@ npx lerna list
 yarn build
 
 # 构建特定包
-npx lerna run build --scope=@formflow/components
-npx lerna run build --scope=@formflow/cli
+npx lerna run build --scope=@flowform/components
+npx lerna run build --scope=@flowform/cli
 ```
 
 ### 开发模式
@@ -85,7 +85,7 @@ npx lerna run build --scope=@formflow/cli
 yarn dev
 
 # 启动特定包的开发模式
-npx lerna run dev --scope=@formflow/components --stream
+npx lerna run dev --scope=@flowform/components --stream
 ```
 
 ### 清理构建
@@ -95,47 +95,47 @@ npx lerna run dev --scope=@formflow/components --stream
 yarn clean
 
 # 清理特定包
-npx lerna run clean --scope=@formflow/components
+npx lerna run clean --scope=@flowform/components
 ```
 
 ## 📚 各包使用说明
 
-### @formflow/shared
+### @flowform/shared
 
 共享工具和类型定义：
 
 ```typescript
 // 导入类型
-import { FormField, FormData, FormState } from '@formflow/shared';
+import { FormField, FormData, FormState } from '@flowform/shared';
 
 // 导入工具函数
-import { createInitialFormState, validateForm } from '@formflow/shared';
+import { createInitialFormState, validateForm } from '@flowform/shared';
 
 // 导入工具类
-import FormFlowUtils from '@formflow/shared';
+import FlowFormUtils from '@flowform/shared';
 ```
 
-### @formflow/components
+### @flowform/components
 
 React组件库：
 
 ```bash
 # 在项目中使用
-yarn add @formflow/components
+yarn add @flowform/components
 
 # 导入组件
-import { Form, FormField, FormButton, FormFlow } from '@formflow/components';
+import { Form, FormField, FormButton, FlowForm } from '@flowform/components';
 ```
 
-### @formflow/mobile
+### @flowform/mobile
 
 移动端表单组件：
 
 ```typescript
-import { MobileForm, MobileFormField, MobileFormFlow } from '@formflow/mobile';
+import { MobileForm, MobileFormField, MobileFlowForm } from '@flowform/mobile';
 
 // 使用移动端优化的表单组件
-<MobileFormFlow
+<MobileFlowForm
   fields={[
     { name: 'username', type: 'text', label: '用户名', required: true },
     { name: 'email', type: 'email', label: '邮箱', required: true }
@@ -144,15 +144,15 @@ import { MobileForm, MobileFormField, MobileFormFlow } from '@formflow/mobile';
 />
 ```
 
-### @formflow/pc
+### @flowform/pc
 
 PC端表单组件：
 
 ```typescript
-import { PCForm, PCFormField, PCFormFlow } from '@formflow/pc';
+import { PCForm, PCFormField, PCFlowForm } from '@flowform/pc';
 
 // 使用PC端优化的表单组件
-<PCFormFlow
+<PCFlowForm
   fields={[
     { name: 'username', type: 'text', label: '用户名', required: true },
     { name: 'email', type: 'email', label: '邮箱', required: true }
@@ -161,7 +161,7 @@ import { PCForm, PCFormField, PCFormFlow } from '@formflow/pc';
 />
 ```
 
-### @formflow/loader
+### @flowform/loader
 
 Webpack loader插件：
 
@@ -174,9 +174,9 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: '@formflow/loader',
+            loader: '@flowform/loader',
             options: {
-              insertContent: '<script src="formflow.js"></script>'
+              insertContent: '<script src="flowform.js"></script>'
             }
           }
         ]
@@ -186,24 +186,24 @@ module.exports = {
 };
 ```
 
-### @formflow/cli
+### @flowform/cli
 
 CLI工具，支持全局安装和本地使用：
 
 ```bash
 # 全局安装
-yarn global add @formflow/cli
+yarn global add @flowform/cli
 
 # 使用CLI命令
-formflow init
-formflow build
+flowform init
+flowform build
 
 # 本地使用
-npx @formflow/cli init
-npx @formflow/cli build
+npx @flowform/cli init
+npx @flowform/cli build
 ```
 
-### @formflow/example
+### @flowform/example
 
 示例项目：
 
@@ -282,7 +282,7 @@ yarn add -D tslib
 ## 📁 项目结构说明
 
 ```
-formflow/
+flowform/
 ├── packages/
 │   ├── cli/           # CLI工具
 │   ├── components/    # 组件库 (React组件)
@@ -309,7 +309,7 @@ formflow/
 yarn publish
 
 # 发布特定包
-npx lerna publish --scope=@formflow/components
+npx lerna publish --scope=@flowform/components
 ```
 
 ### 构建生产版本
@@ -346,7 +346,7 @@ git commit -m "docs: update README"
 yarn test
 
 # 运行特定包的测试
-npx lerna run test --scope=@formflow/components
+npx lerna run test --scope=@flowform/components
 ```
 
 ## 🔗 相关链接

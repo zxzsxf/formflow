@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/docs",
+  "name": "@flowform/docs",
   "version": "1.0.0",
-  "description": "FormFlow文档",
+  "description": "FlowForm文档",
   "private": true,
   "scripts": {
     "dev": "vitepress dev",

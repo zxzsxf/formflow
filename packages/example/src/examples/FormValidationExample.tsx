@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { createFormFlow } from '../../../../packages/pc/src/hooks/create-form-flow';
+import { createFlowForm } from '../../../../packages/pc/src/hooks/create-form-flow';
 
 // 表单验证 schema
 const validationFormSchema = {
@@ -182,7 +182,7 @@ const validationFormSchema = {
 
 const FormValidationExample = () => {
   const formRef = useRef<any>(null);
-  const FlowFormDemo = createFormFlow(validationFormSchema);
+  const FlowFormDemo = createFlowForm(validationFormSchema);
 
   const handleSubmit = () => {
     if (formRef.current) {
@@ -226,7 +226,7 @@ const FormValidationExample = () => {
     <div className="form-container">
       <h2 className="form-title">表单验证示例</h2>
       <p className="form-description">
-        这个示例展示了 FormFlow 强大的表单验证功能。包含各种验证规则：必填验证、长度验证、格式验证、自定义验证等。
+        这个示例展示了 FlowForm 强大的表单验证功能。包含各种验证规则：必填验证、长度验证、格式验证、自定义验证等。
       </p>
 
       <div className="code-preview">

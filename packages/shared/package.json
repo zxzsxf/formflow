@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/shared",
+  "name": "@flowform/shared",
   "version": "1.0.0",
-  "description": "FormFlow共享工具包",
+  "description": "FlowForm共享工具包",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

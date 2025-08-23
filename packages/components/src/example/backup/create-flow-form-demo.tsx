@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { createFormFlow } from '../../../../pc/src/hooks/create-form-flow';
+import { createFlowForm } from '../../../../pc/src/hooks/create-form-flow';
 
 // 定义表单的 schema
 const formSchema = {
@@ -151,7 +151,7 @@ const formSchema = {
   }
 };
 
-const FlowFormDemo = createFormFlow(formSchema);
+const FlowFormDemo = createFlowForm(formSchema);
 
 const ExampleForm = () => {
   const formRef = useRef<any>(null);

@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/mobile",
+  "name": "@flowform/mobile",
   "version": "1.0.0",
-  "description": "FormFlow移动端表单",
+  "description": "FlowForm移动端表单",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -14,8 +14,8 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@formflow/components": "workspace:*",
-    "@formflow/shared": "workspace:*",
+    "@flowform/components": "workspace:*",
+    "@flowform/shared": "workspace:*",
     "constate": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

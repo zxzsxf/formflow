@@ -1,10 +1,10 @@
 import React, { useEffect, useImperativeHandle, useRef, useMemo, useState } from 'react';
 
-import { useFormContext, FormContextProvider } from '@formflow/mobile/context/formContext';
-import { getFormSchema, handleNotice, handleCard } from '@formflow/mobile/reaction/handleSchema';
+import { useFormContext, FormContextProvider } from '@flowform/mobile/context/formContext';
+import { getFormSchema, handleNotice, handleCard } from '@flowform/mobile/reaction/handleSchema';
 
 // import { BasicMobileFormProps } from './interface';
-import BaseForm from '@formflow/mobile/core/BaseForm';
+import BaseForm from '@flowform/mobile/core/BaseForm';
 import { schemas } from './mock/initSchema'; // mock数据
 
 const mock = true;

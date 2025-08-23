@@ -1,4 +1,4 @@
-# FormFlow Components Lint 错误修复总结
+# FlowForm Components Lint 错误修复总结
 
 ## 主要问题
 
@@ -39,7 +39,7 @@
   - `Upload.tsx`: 修复 props 类型
 
 ### 4. 组件引用问题
-- **问题**: `FormFlow.tsx` 引用了不存在的 `FormButton` 组件
+- **问题**: `FlowForm.tsx` 引用了不存在的 `FormButton` 组件
 - **解决方案**: 移除不存在的导入或创建该组件
 
 ### 5. 属性使用问题

@@ -6,15 +6,15 @@ const chalk = require('chalk');
 const program = new Command();
 
 program
-  .name('formflow')
-  .description('FormFlow CLI工具')
+  .name('flowform')
+  .description('FlowForm CLI工具')
   .version('1.0.0');
 
 program
   .command('init')
-  .description('初始化FormFlow项目')
+  .description('初始化FlowForm项目')
   .action(() => {
-    console.log(chalk.green('初始化FormFlow项目...'));
+    console.log(chalk.green('初始化FlowForm项目...'));
   });
 
 program

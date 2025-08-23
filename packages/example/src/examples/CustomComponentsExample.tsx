@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-// import { createFormFlow } from '../../../../pc/src/hooks/create-form-flow';
-import { createFormFlow } from '../../../../packages/pc/src/hooks/create-form-flow';
+// import { createFlowForm } from '../../../../pc/src/hooks/create-form-flow';
+import { createFlowForm } from '../../../../packages/pc/src/hooks/create-form-flow';
 
 // 自定义组件示例 schema
 const customComponentsSchema = {
@@ -168,7 +168,7 @@ const customComponentsSchema = {
 
 const CustomComponentsExample = () => {
   const formRef = useRef<any>(null);
-  const FlowFormDemo = createFormFlow(customComponentsSchema);
+  const FlowFormDemo = createFlowForm(customComponentsSchema);
 
   const handleSubmit = () => {
     if (formRef.current) {
@@ -204,7 +204,7 @@ const CustomComponentsExample = () => {
         richText: '这是一个预设的富文本内容示例',
         colorPicker: '#1890ff',
         slider: 50,
-        tags: ['React', 'FormFlow', '低代码'],
+        tags: ['React', 'FlowForm', '低代码'],
         rating: 5,
         timeRange: {
           startTime: '09:00',
@@ -226,7 +226,7 @@ const CustomComponentsExample = () => {
     <div className="form-container">
       <h2 className="form-title">自定义组件示例</h2>
       <p className="form-description">
-        这个示例展示了 FormFlow 的自定义组件能力。包含文件上传、富文本编辑、颜色选择、滑块、标签、评分、时间范围、条件显示等高级组件。
+        这个示例展示了 FlowForm 的自定义组件能力。包含文件上传、富文本编辑、颜色选择、滑块、标签、评分、时间范围、条件显示等高级组件。
       </p>
 
       <div className="code-preview">

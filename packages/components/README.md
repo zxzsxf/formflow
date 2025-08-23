@@ -1,13 +1,13 @@
-# FormFlow 组件库
+# FlowForm 组件库
 
 基于 Formily 和 Ant Design 的表单组件库，提供完整的表单解决方案。
 
 ## 安装
 
 ```bash
-npm install @formflow/components
+npm install @flowform/components
 # 或
-yarn add @formflow/components
+yarn add @flowform/components
 ```
 
 ## 基本用法
@@ -29,7 +29,7 @@ const form = createForm({
 ### 2. 使用表单组件
 
 ```tsx
-import { Form, FormItem, Input } from '@formflow/components';
+import { Form, FormItem, Input } from '@flowform/components';
 
 const MyForm = () => {
   return (
@@ -105,7 +105,7 @@ const MyForm = () => {
 使用 `FieldDebug` 组件来调试字段连接状态：
 
 ```tsx
-import { FieldDebug } from '@formflow/components';
+import { FieldDebug } from '@flowform/components';
 
 <FormItem label="姓名" name="name">
   <Input />

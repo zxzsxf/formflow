@@ -1,5 +1,5 @@
 // @ts-ignore
-import * as components from "@formflow/components/index"; // 工程组件
+import * as components from "@flowform/components/index"; // 工程组件
 
 // @ts-ignore
 const componentsDataDefault = {

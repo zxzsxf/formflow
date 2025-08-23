@@ -3,7 +3,7 @@ import React from 'react';
 import { Form } from './Form';
 import { FormField } from './FormField';
 
-export interface FormFlowProps {
+export interface FlowFormProps {
   fields: Array<{
     name: string;
     type: 'text' | 'number' | 'email' | 'password' | 'select' | 'checkbox' | 'radio';
@@ -16,7 +16,7 @@ export interface FormFlowProps {
   className?: string;
 }
 
-const FormFlow: React.FC<FormFlowProps> = ({
+const FlowForm: React.FC<FlowFormProps> = ({
   fields,
   onSubmit,
   className = ''
@@ -44,4 +44,4 @@ const FormFlow: React.FC<FormFlowProps> = ({
   );
 };
 
-export default FormFlow; 
+export default FlowForm; 

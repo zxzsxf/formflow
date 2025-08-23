@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { createFormFlow } from '../../../../packages/pc/src/hooks/create-form-flow';
+import { createFlowForm } from '../../../../packages/pc/src/hooks/create-form-flow';
 
 // 基础表单 schema
 const basicFormSchema = {
@@ -54,7 +54,7 @@ const basicFormSchema = {
 
 const BasicFormExample = () => {
   const formRef = useRef<any>(null);
-  const FlowFormDemo = createFormFlow(basicFormSchema);
+  const FlowFormDemo = createFlowForm(basicFormSchema);
 
   const handleSubmit = () => {
     if (formRef.current) {
@@ -87,7 +87,7 @@ const BasicFormExample = () => {
     <div className="form-container">
       <h2 className="form-title">基础表单示例</h2>
       <p className="form-description">
-        这是一个基础的表单示例，展示了 FormFlow 的基本用法。包含输入框、数字输入框和单选按钮等基础组件。
+        这是一个基础的表单示例，展示了 FlowForm 的基本用法。包含输入框、数字输入框和单选按钮等基础组件。
       </p>
 
       <div className="code-preview">

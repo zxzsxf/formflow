@@ -2021,9 +2021,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formflow/cli@workspace:packages/cli":
+"@flowform/cli@workspace:packages/cli":
   version: 0.0.0-use.local
-  resolution: "@formflow/cli@workspace:packages/cli"
+  resolution: "@flowform/cli@workspace:packages/cli"
   dependencies:
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-node-resolve": ^15.2.1
@@ -2033,13 +2033,13 @@ __metadata:
     inquirer: ^8.2.6
     rollup: ^3.29.4
   bin:
-    formflow: dist/cli.js
+    flowform: dist/cli.js
   languageName: unknown
   linkType: soft
 
-"@formflow/components@workspace:*, @formflow/components@workspace:packages/components":
+"@flowform/components@workspace:*, @flowform/components@workspace:packages/components":
   version: 0.0.0-use.local
-  resolution: "@formflow/components@workspace:packages/components"
+  resolution: "@flowform/components@workspace:packages/components"
   dependencies:
     "@ant-design/icons": 4.8.0
     "@babel/core": ^7.0.0
@@ -2087,22 +2087,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formflow/docs@workspace:packages/docs":
+"@flowform/docs@workspace:packages/docs":
   version: 0.0.0-use.local
-  resolution: "@formflow/docs@workspace:packages/docs"
+  resolution: "@flowform/docs@workspace:packages/docs"
   dependencies:
     vitepress: ^1.0.0-rc.4
     vue: ^3.3.4
   languageName: unknown
   linkType: soft
 
-"@formflow/example@workspace:packages/example":
+"@flowform/example@workspace:packages/example":
   version: 0.0.0-use.local
-  resolution: "@formflow/example@workspace:packages/example"
+  resolution: "@flowform/example@workspace:packages/example"
   dependencies:
-    "@formflow/components": "workspace:*"
-    "@formflow/mobile": "workspace:*"
-    "@formflow/pc": "workspace:*"
+    "@flowform/components": "workspace:*"
+    "@flowform/mobile": "workspace:*"
+    "@flowform/pc": "workspace:*"
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
     "@vitejs/plugin-react": ^4.0.3
@@ -2112,9 +2112,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formflow/loader@workspace:packages/loader":
+"@flowform/loader@workspace:packages/loader":
   version: 0.0.0-use.local
-  resolution: "@formflow/loader@workspace:packages/loader"
+  resolution: "@flowform/loader@workspace:packages/loader"
   dependencies:
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-node-resolve": ^15.2.1
@@ -2124,12 +2124,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formflow/mobile@workspace:*, @formflow/mobile@workspace:packages/mobile":
+"@flowform/mobile@workspace:*, @flowform/mobile@workspace:packages/mobile":
   version: 0.0.0-use.local
-  resolution: "@formflow/mobile@workspace:packages/mobile"
+  resolution: "@flowform/mobile@workspace:packages/mobile"
   dependencies:
-    "@formflow/components": "workspace:*"
-    "@formflow/shared": "workspace:*"
+    "@flowform/components": "workspace:*"
+    "@flowform/shared": "workspace:*"
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-node-resolve": ^15.2.1
     "@rollup/plugin-typescript": ^11.1.6
@@ -2145,12 +2145,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formflow/pc@workspace:*, @formflow/pc@workspace:packages/pc":
+"@flowform/pc@workspace:*, @flowform/pc@workspace:packages/pc":
   version: 0.0.0-use.local
-  resolution: "@formflow/pc@workspace:packages/pc"
+  resolution: "@flowform/pc@workspace:packages/pc"
   dependencies:
-    "@formflow/components": "workspace:*"
-    "@formflow/shared": "workspace:*"
+    "@flowform/components": "workspace:*"
+    "@flowform/shared": "workspace:*"
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-node-resolve": ^15.2.1
     "@rollup/plugin-typescript": ^11.1.6
@@ -2166,9 +2166,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formflow/shared@workspace:*, @formflow/shared@workspace:packages/shared":
+"@flowform/shared@workspace:*, @flowform/shared@workspace:packages/shared":
   version: 0.0.0-use.local
-  resolution: "@formflow/shared@workspace:packages/shared"
+  resolution: "@flowform/shared@workspace:packages/shared"
   dependencies:
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-node-resolve": ^15.2.1
@@ -7231,6 +7231,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flowform@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "flowform@workspace:."
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@rollup/plugin-typescript": ^11.1.6
+    lerna: ^7.1.4
+    rimraf: ^5.0.1
+    rollup: ^3.29.4
+    tslib: ^2.8.1
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
 "focus-trap@npm:^7.6.4":
   version: 7.6.5
   resolution: "focus-trap@npm:7.6.5"
@@ -7281,21 +7296,6 @@ __metadata:
   checksum: 9b7788836df9fa5a6999e0c02515b001946b2a868cfe53f026c69e2c537a2ff9fbfb8e9d2b678744628f3dc7a2d6e14e4e45dfaf68aa6239727f0bdb8ce0abf2
   languageName: node
   linkType: hard
-
-"formflow@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "formflow@workspace:."
-  dependencies:
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@rollup/plugin-typescript": ^11.1.6
-    lerna: ^7.1.4
-    rimraf: ^5.0.1
-    rollup: ^3.29.4
-    tslib: ^2.8.1
-    typescript: ^5.2.2
-  languageName: unknown
-  linkType: soft
 
 "forwarded@npm:0.2.0":
   version: 0.2.0

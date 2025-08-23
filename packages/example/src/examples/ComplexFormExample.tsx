@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { createFormFlow } from '../../../../packages/pc/src/hooks/create-form-flow';
+import { createFlowForm } from '../../../../packages/pc/src/hooks/create-form-flow';
 
 // 复杂表单 schema
 const complexFormSchema = {
@@ -150,7 +150,7 @@ const complexFormSchema = {
 
 const ComplexFormExample = () => {
   const formRef = useRef<any>(null);
-  const FlowFormDemo = createFormFlow(complexFormSchema);
+  const FlowFormDemo = createFlowForm(complexFormSchema);
 
   const handleSubmit = () => {
     if (formRef.current) {
@@ -190,7 +190,7 @@ const ComplexFormExample = () => {
     <div className="form-container">
       <h2 className="form-title">复杂表单示例</h2>
       <p className="form-description">
-        这是一个复杂的表单示例，展示了 FormFlow 的多种组件类型和布局能力。包含三个卡片分组，涵盖了各种常用的表单组件。
+        这是一个复杂的表单示例，展示了 FlowForm 的多种组件类型和布局能力。包含三个卡片分组，涵盖了各种常用的表单组件。
       </p>
 
       <div className="code-preview">

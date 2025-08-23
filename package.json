@@ -1,7 +1,7 @@
 {
-  "name": "formflow",
+  "name": "flowform",
   "version": "1.0.0",
-  "description": "FormFlow - 表单流程管理工具",
+  "description": "FlowForm - 表单流程管理工具",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -36,13 +36,12 @@
     "npm": ">=8.0.0"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/your-org/formflow.git"
+    "type": "git"
   },
   "keywords": [
     "form",
     "workflow",
-    "formflow",
+    "flowform",
     "cli",
     "components"
   ],

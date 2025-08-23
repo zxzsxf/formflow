@@ -130,7 +130,7 @@ function cleanAll() {
 }
 
 function showHelp() {
-  log('FormFlow 清理脚本使用说明:', 'cyan');
+  log('FlowForm 清理脚本使用说明:', 'cyan');
   log('');
   log('用法:', 'yellow');
   log('  node scripts/clean.js [选项]', 'blue');
@@ -155,7 +155,7 @@ function showHelp() {
 
 // 主函数
 function main() {
-  log('🧹 FormFlow 清理脚本', 'magenta');
+  log('🧹 FlowForm 清理脚本', 'magenta');
   log('');
 
   switch (target) {

@@ -20,7 +20,7 @@ const { Form } = components;
  * @param formSchema EasyFrom 的 Schema
  * @returns 表单组件
  */
-export const createFormFlow = <T extends {} = any>(
+export const createFlowForm = <T extends {} = any>(
   formSchema?: any
 ): React.FC<any> => {
   return withErrorBoundary(
@@ -66,4 +66,4 @@ export const createFormFlow = <T extends {} = any>(
   );
 };
 
-export default createFormFlow;
+export default createFlowForm;

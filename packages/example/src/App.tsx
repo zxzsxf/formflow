@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>FormFlow Playground</h2>
-        {/* <p>FormFlow 组件库的交互式演示平台</p> */}
+        <h2>FlowForm Playground</h2>
+        {/* <p>FlowForm 组件库的交互式演示平台</p> */}
       </header>
       
       <nav className="example-nav">
@@ -47,7 +47,7 @@ function App() {
       </main>
 
       {/* <footer className="App-footer">
-        <p>FormFlow - 低代码表单解决方案</p>
+        <p>FlowForm - 低代码表单解决方案</p>
       </footer> */}
     </div>
   );

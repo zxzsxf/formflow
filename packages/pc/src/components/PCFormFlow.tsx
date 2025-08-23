@@ -2,7 +2,7 @@ import React from 'react';
 import { PCForm } from './PCForm';
 import { PCFormField } from './PCFormField';
 
-export interface PCFormFlowProps {
+export interface PCFlowFormProps {
   fields: Array<{
     name: string;
     type: 'text' | 'number' | 'email' | 'password' | 'select' | 'checkbox' | 'radio';
@@ -15,7 +15,7 @@ export interface PCFormFlowProps {
   className?: string;
 }
 
-const PCFormFlow: React.FC<PCFormFlowProps> = ({
+const PCFlowForm: React.FC<PCFlowFormProps> = ({
   fields,
   onSubmit,
   className = ''
@@ -38,4 +38,4 @@ const PCFormFlow: React.FC<PCFormFlowProps> = ({
   );
 };
 
-export default PCFormFlow; 
+export default PCFlowForm; 

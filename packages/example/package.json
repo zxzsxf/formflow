@@ -1,7 +1,7 @@
 {
-  "name": "@formflow/example",
+  "name": "@flowform/example",
   "version": "1.0.0",
-  "description": "FormFlow示例项目",
+  "description": "FlowForm示例项目",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@formflow/components": "workspace:*",
-    "@formflow/mobile": "workspace:*",
-    "@formflow/pc": "workspace:*",
+    "@flowform/components": "workspace:*",
+    "@flowform/mobile": "workspace:*",
+    "@flowform/pc": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

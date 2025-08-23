@@ -7,10 +7,10 @@ lpm搭建
 go：远程组件 + 大屏
 
 
-1. formflow/example
+1. flowform/example
 feat：playground搭建
 
-2. formflow/pc
+2. flowform/pc
 feat：FormLayout
 feat：FormItem-decorater
 feat：FormPropsProvider
@@ -18,22 +18,22 @@ feat：FormSchemaProvider
 feat：表单回显能力
 feat：表单多状态
 
-3.formflow/component
+3.flowform/component
 feat：组件阅读态能力
 feat：微件接入
 
-4.formflow/mobile
+4.flowform/mobile
 feat：移动端表单FormBase搭建
 feat：移动端表单业务层
 
-5.formflow/cli
+5.flowform/cli
 feat：命令行
 feat：服务搭建
 
-6.formflow/loader
+6.flowform/loader
 feat：webpack插件
 
-7.formflow/shared
-8.formflow/docs
+7.flowform/shared
+8.flowform/docs
 
 

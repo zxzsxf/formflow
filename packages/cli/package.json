@@ -1,10 +1,10 @@
 {
-  "name": "@formflow/cli",
+  "name": "@flowform/cli",
   "version": "1.0.0",
-  "description": "FormFlow CLI工具",
+  "description": "FlowForm CLI工具",
   "main": "dist/index.js",
   "bin": {
-    "formflow": "dist/cli.js"
+    "flowform": "dist/cli.js"
   },
   "files": [
     "dist"

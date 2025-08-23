@@ -17,7 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@formflow/*": ["../*/src"],
+      "@flowform/*": ["../*/src"],
       "@/*": ["./src/*"]
     }
   },
