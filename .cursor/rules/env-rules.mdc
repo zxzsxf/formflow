@@ -12,6 +12,7 @@
 - 推荐使用 nvm 或 nvm-windows 管理 Node.js 版本
 - 安装依赖使用: `yarn install`
 - 启动开发环境使用: `yarn dev`
+- PowerShell 不支持 && 操作符, 不要使用 && 操作符
 
 ## 代码规范
 - 使用 TypeScript 严格模式
