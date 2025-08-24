@@ -1,17 +1,18 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "npmClient": "yarn",
-
   "packages": [
     "packages/*"
   ],
   "command": {
     "bootstrap": {
-      "npmClientArgs": ["--legacy-peer-deps"]
+      "npmClientArgs": [
+        "--legacy-peer-deps"
+      ]
     },
     "publish": {
       "conventionalCommits": true,
       "message": "chore(release): publish"
     }
   }
-} 
+}
