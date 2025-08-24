@@ -1,5 +1,5 @@
 {
-  "name": "@flowform/pc",
+  "name": "flowform-pc",
   "version": "1.1.0",
   "description": "FlowForm PC端表单",
   "main": "dist/index.js",
@@ -14,8 +14,8 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@flowform/components": "workspace:*",
-    "@flowform/shared": "workspace:*",
+    "@flowform/components": "1.1.0",
+    "@flowform/shared": "1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.13"
@@ -37,5 +37,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "0b145de26feefe6e39d7f5ac806b5e10709b34d1"
 }

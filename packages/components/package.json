@@ -1,5 +1,5 @@
 {
-  "name": "@flowform/components",
+  "name": "flowform-components",
   "version": "1.1.0",
   "description": "FlowForm组件库",
   "main": "dist/index.js",
@@ -77,5 +77,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "0b145de26feefe6e39d7f5ac806b5e10709b34d1"
 }

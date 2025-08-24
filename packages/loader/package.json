@@ -1,5 +1,5 @@
 {
-  "name": "@flowform/loader",
+  "name": "flowform-loader",
   "version": "1.1.0",
   "description": "FlowForm Webpack Loader插件",
   "main": "dist/index.js",
@@ -25,5 +25,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "0b145de26feefe6e39d7f5ac806b5e10709b34d1"
 }

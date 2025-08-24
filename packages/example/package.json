@@ -1,5 +1,5 @@
 {
-  "name": "@flowform/example",
+  "name": "flowform-example",
   "version": "1.1.0",
   "description": "FlowForm示例项目",
   "private": true,

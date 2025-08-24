@@ -1,5 +1,5 @@
 {
-  "name": "@flowform/cli",
+  "name": "flowform-cli",
   "version": "1.1.0",
   "description": "FlowForm CLI工具",
   "main": "dist/index.js",
@@ -30,5 +30,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "0b145de26feefe6e39d7f5ac806b5e10709b34d1"
 }
