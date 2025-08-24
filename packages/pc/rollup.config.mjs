@@ -17,7 +17,7 @@ export default defineConfig({
       sourcemap: true
     }
   ],
-  external: ['react', 'react-dom', '@flowform/components', '@flowform/shared'],
+  external: ['react', 'react-dom', 'flowform-components', 'flowform-shared'],
   plugins: [
     nodeResolve(),
     commonjs(),

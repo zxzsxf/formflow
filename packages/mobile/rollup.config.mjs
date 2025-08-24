@@ -25,7 +25,7 @@ export default defineConfig({
   external: [
     'react', 
     'react-dom', 
-    '@flowform/shared',
+    'flowform-shared',
     '@formily/antd',
     '@formily/core',
     '@formily/react',

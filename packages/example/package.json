@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@flowform/components": "workspace:*",
-    "@flowform/mobile": "workspace:*",
-    "@flowform/pc": "workspace:*",
+    "flowform-components": "workspace:*",
+    "flowform-mobile": "workspace:*",
+    "flowform-pc": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

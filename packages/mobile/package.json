@@ -14,8 +14,8 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "@flowform/components": "1.1.0",
-    "@flowform/shared": "1.1.0",
+    "flowform-components": "1.1.0",
+    "flowform-shared": "1.1.0",
     "constate": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
