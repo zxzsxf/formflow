@@ -6,7 +6,8 @@ import { withErrorBoundary } from "react-error-boundary";
 
 // import { mockSchema } from "../mockSchema";
 // @ts-ignore
-import * as components from "../../../components/src/index";
+// import * as components from "../../../components/src/index";
+import * as components from "@flowform/components/index"; // 工程组件
 
 
 const SchemaField = createSchemaField({
