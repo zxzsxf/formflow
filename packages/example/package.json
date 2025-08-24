@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "flowform-components": "workspace:*",
+    "flowform-component": "workspace:*",
     "flowform-mobile": "workspace:*",
     "flowform-pc": "workspace:*",
     "react": "^18.2.0",

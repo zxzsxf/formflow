@@ -1,5 +1,5 @@
 {
-  "name": "flowform-components",
+  "name": "flowform-component",
   "version": "1.1.0",
   "description": "FlowForm组件库",
   "main": "dist/index.js",

@@ -2021,170 +2021,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flowform/cli@workspace:packages/cli":
-  version: 0.0.0-use.local
-  resolution: "@flowform/cli@workspace:packages/cli"
-  dependencies:
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@types/node": ^18.17.1
-    chalk: ^4.1.2
-    commander: ^11.1.0
-    inquirer: ^8.2.6
-    rollup: ^3.29.4
-  bin:
-    flowform: dist/cli.js
-  languageName: unknown
-  linkType: soft
-
-"@flowform/components@workspace:*, @flowform/components@workspace:packages/components":
-  version: 0.0.0-use.local
-  resolution: "@flowform/components@workspace:packages/components"
-  dependencies:
-    "@ant-design/icons": 4.8.0
-    "@babel/core": ^7.0.0
-    "@babel/plugin-proposal-class-properties": ^7.0.0
-    "@babel/plugin-proposal-object-rest-spread": ^7.0.0
-    "@babel/preset-env": ^7.0.0
-    "@babel/preset-react": ^7.0.0
-    "@babel/preset-typescript": ^7.0.0
-    "@formily/antd": 2.2.27
-    "@formily/core": 2.2.27
-    "@formily/react": 2.2.27
-    "@formily/reactive": 2.2.27
-    "@formily/reactive-react": 2.2.27
-    "@formily/shared": 2.2.27
-    "@rollup/plugin-babel": ^6.0.4
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@rollup/plugin-typescript": ^11.1.6
-    "@rollup/plugin-url": ^8.0.2
-    "@types/react": ^18.2.21
-    "@types/react-dom": ^18.2.7
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    antd: 4.22.8
-    autoprefixer: ^10.4.21
-    classnames: 2.3.1
-    css-loader: ^6.8.0
-    dayjs: ^1.11.10
-    eslint: ^8.0.0
-    eslint-plugin-react: ^7.0.0
-    eslint-plugin-react-hooks: ^4.0.0
-    html-webpack-plugin: ^5.5.0
-    less: ^4.4.0
-    less-loader: ^11.1.0
-    postcss-less: ^6.0.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    rollup: ^3.29.4
-    rollup-plugin-less: ^1.1.3
-    rollup-plugin-postcss: ^4.0.2
-    style-loader: ^3.3.0
-    ts-loader: ^9.4.0
-    tslib: ^2.8.1
-    typescript: ^5.2.2
-    webpack: ^5.89.0
-    webpack-cli: ^5.1.4
-    webpack-dev-server: ^4.15.1
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  languageName: unknown
-  linkType: soft
-
-"@flowform/docs@workspace:packages/docs":
-  version: 0.0.0-use.local
-  resolution: "@flowform/docs@workspace:packages/docs"
-  dependencies:
-    vitepress: ^1.0.0-rc.4
-    vue: ^3.3.4
-  languageName: unknown
-  linkType: soft
-
-"@flowform/example@workspace:packages/example":
-  version: 0.0.0-use.local
-  resolution: "@flowform/example@workspace:packages/example"
-  dependencies:
-    "@flowform/components": "workspace:*"
-    "@flowform/mobile": "workspace:*"
-    "@flowform/pc": "workspace:*"
-    "@types/react": ^18.2.21
-    "@types/react-dom": ^18.2.7
-    "@vitejs/plugin-react": ^4.0.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    vite: ^4.4.5
-  languageName: unknown
-  linkType: soft
-
-"@flowform/loader@workspace:packages/loader":
-  version: 0.0.0-use.local
-  resolution: "@flowform/loader@workspace:packages/loader"
-  dependencies:
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@types/node": ^18.17.1
-    loader-utils: 3.2.2
-    rollup: ^3.29.4
-  languageName: unknown
-  linkType: soft
-
-"@flowform/mobile@workspace:*, @flowform/mobile@workspace:packages/mobile":
-  version: 0.0.0-use.local
-  resolution: "@flowform/mobile@workspace:packages/mobile"
-  dependencies:
-    "@flowform/components": "workspace:*"
-    "@flowform/shared": "workspace:*"
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@rollup/plugin-typescript": ^11.1.6
-    "@types/react": ^18.2.21
-    "@types/react-dom": ^18.2.7
-    constate: ^3.3.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    rollup: ^3.29.4
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  languageName: unknown
-  linkType: soft
-
-"@flowform/pc@workspace:*, @flowform/pc@workspace:packages/pc":
-  version: 0.0.0-use.local
-  resolution: "@flowform/pc@workspace:packages/pc"
-  dependencies:
-    "@flowform/components": "workspace:*"
-    "@flowform/shared": "workspace:*"
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@rollup/plugin-typescript": ^11.1.6
-    "@types/react": ^18.2.21
-    "@types/react-dom": ^18.2.7
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-error-boundary: ^4.0.13
-    rollup: ^3.29.4
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  languageName: unknown
-  linkType: soft
-
-"@flowform/shared@workspace:*, @flowform/shared@workspace:packages/shared":
-  version: 0.0.0-use.local
-  resolution: "@flowform/shared@workspace:packages/shared"
-  dependencies:
-    "@rollup/plugin-commonjs": ^25.0.4
-    "@rollup/plugin-node-resolve": ^15.2.1
-    "@rollup/plugin-typescript": ^11.1.6
-    "@types/lodash": ^4.14.199
-    lodash: ^4.17.21
-    rollup: ^3.29.4
-  languageName: unknown
-  linkType: soft
-
 "@formily/antd@npm:2.2.27":
   version: 2.2.27
   resolution: "@formily/antd@npm:2.2.27"
@@ -7479,6 +7315,170 @@ __metadata:
   checksum: 8c96c02fbeadcf4e8ffd0fa24983241e27698b0781295622591fc13585e2f226609d95e422bcf2ef044146ffacb6b68b1f20871454eddf75ab3caa6ee5f4a1fe
   languageName: node
   linkType: hard
+
+"flowform-cli@workspace:packages/cli":
+  version: 0.0.0-use.local
+  resolution: "flowform-cli@workspace:packages/cli"
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@types/node": ^18.17.1
+    chalk: ^4.1.2
+    commander: ^11.1.0
+    inquirer: ^8.2.6
+    rollup: ^3.29.4
+  bin:
+    flowform: dist/cli.js
+  languageName: unknown
+  linkType: soft
+
+"flowform-components@1.1.0, flowform-components@workspace:*, flowform-components@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "flowform-components@workspace:packages/components"
+  dependencies:
+    "@ant-design/icons": 4.8.0
+    "@babel/core": ^7.0.0
+    "@babel/plugin-proposal-class-properties": ^7.0.0
+    "@babel/plugin-proposal-object-rest-spread": ^7.0.0
+    "@babel/preset-env": ^7.0.0
+    "@babel/preset-react": ^7.0.0
+    "@babel/preset-typescript": ^7.0.0
+    "@formily/antd": 2.2.27
+    "@formily/core": 2.2.27
+    "@formily/react": 2.2.27
+    "@formily/reactive": 2.2.27
+    "@formily/reactive-react": 2.2.27
+    "@formily/shared": 2.2.27
+    "@rollup/plugin-babel": ^6.0.4
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@rollup/plugin-typescript": ^11.1.6
+    "@rollup/plugin-url": ^8.0.2
+    "@types/react": ^18.2.21
+    "@types/react-dom": ^18.2.7
+    "@typescript-eslint/eslint-plugin": ^6.0.0
+    "@typescript-eslint/parser": ^6.0.0
+    antd: 4.22.8
+    autoprefixer: ^10.4.21
+    classnames: 2.3.1
+    css-loader: ^6.8.0
+    dayjs: ^1.11.10
+    eslint: ^8.0.0
+    eslint-plugin-react: ^7.0.0
+    eslint-plugin-react-hooks: ^4.0.0
+    html-webpack-plugin: ^5.5.0
+    less: ^4.4.0
+    less-loader: ^11.1.0
+    postcss-less: ^6.0.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    rollup: ^3.29.4
+    rollup-plugin-less: ^1.1.3
+    rollup-plugin-postcss: ^4.0.2
+    style-loader: ^3.3.0
+    ts-loader: ^9.4.0
+    tslib: ^2.8.1
+    typescript: ^5.2.2
+    webpack: ^5.89.0
+    webpack-cli: ^5.1.4
+    webpack-dev-server: ^4.15.1
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  languageName: unknown
+  linkType: soft
+
+"flowform-docs@workspace:packages/docs":
+  version: 0.0.0-use.local
+  resolution: "flowform-docs@workspace:packages/docs"
+  dependencies:
+    vitepress: ^1.0.0-rc.4
+    vue: ^3.3.4
+  languageName: unknown
+  linkType: soft
+
+"flowform-example@workspace:packages/example":
+  version: 0.0.0-use.local
+  resolution: "flowform-example@workspace:packages/example"
+  dependencies:
+    "@types/react": ^18.2.21
+    "@types/react-dom": ^18.2.7
+    "@vitejs/plugin-react": ^4.0.3
+    flowform-components: "workspace:*"
+    flowform-mobile: "workspace:*"
+    flowform-pc: "workspace:*"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    vite: ^4.4.5
+  languageName: unknown
+  linkType: soft
+
+"flowform-loader@workspace:packages/loader":
+  version: 0.0.0-use.local
+  resolution: "flowform-loader@workspace:packages/loader"
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@types/node": ^18.17.1
+    loader-utils: 3.2.2
+    rollup: ^3.29.4
+  languageName: unknown
+  linkType: soft
+
+"flowform-mobile@workspace:*, flowform-mobile@workspace:packages/mobile":
+  version: 0.0.0-use.local
+  resolution: "flowform-mobile@workspace:packages/mobile"
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@rollup/plugin-typescript": ^11.1.6
+    "@types/react": ^18.2.21
+    "@types/react-dom": ^18.2.7
+    constate: ^3.3.0
+    flowform-components: 1.1.0
+    flowform-shared: 1.1.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    rollup: ^3.29.4
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  languageName: unknown
+  linkType: soft
+
+"flowform-pc@workspace:*, flowform-pc@workspace:packages/pc":
+  version: 0.0.0-use.local
+  resolution: "flowform-pc@workspace:packages/pc"
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@rollup/plugin-typescript": ^11.1.6
+    "@types/react": ^18.2.21
+    "@types/react-dom": ^18.2.7
+    flowform-components: 1.1.0
+    flowform-shared: 1.1.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-error-boundary: ^4.0.13
+    rollup: ^3.29.4
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  languageName: unknown
+  linkType: soft
+
+"flowform-shared@1.1.0, flowform-shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "flowform-shared@workspace:packages/shared"
+  dependencies:
+    "@rollup/plugin-commonjs": ^25.0.4
+    "@rollup/plugin-node-resolve": ^15.2.1
+    "@rollup/plugin-typescript": ^11.1.6
+    "@types/lodash": ^4.14.199
+    lodash: ^4.17.21
+    rollup: ^3.29.4
+  languageName: unknown
+  linkType: soft
 
 "flowform@workspace:.":
   version: 0.0.0-use.local
