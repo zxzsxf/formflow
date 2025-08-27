@@ -4,7 +4,7 @@
   "description": "FlowForm CLI工具",
   "main": "dist/index.js",
   "bin": {
-    "flowform": "dist/cli.js"
+    "ff-cli": "./bin/index.js"
   },
   "files": [
     "dist"
