@@ -16,7 +16,7 @@ export const commandStart = async (options?: {
   dotenv.config();
 
   const app: Express = express();
-  const port = process.env.PORT || 50922;
+  const port = process.env.PORT || 7066;
 
   //  跨域
   app.use(cors());
