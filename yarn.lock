@@ -7332,9 +7332,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"flowform-components@1.1.0, flowform-components@workspace:*, flowform-components@workspace:packages/components":
+"flowform-component@1.1.0, flowform-component@workspace:*, flowform-component@workspace:packages/components":
   version: 0.0.0-use.local
-  resolution: "flowform-components@workspace:packages/components"
+  resolution: "flowform-component@workspace:packages/components"
   dependencies:
     "@ant-design/icons": 4.8.0
     "@babel/core": ^7.0.0
@@ -7404,7 +7404,7 @@ __metadata:
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
     "@vitejs/plugin-react": ^4.0.3
-    flowform-components: "workspace:*"
+    flowform-component: "workspace:*"
     flowform-mobile: "workspace:*"
     flowform-pc: "workspace:*"
     react: ^18.2.0
@@ -7435,7 +7435,7 @@ __metadata:
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
     constate: ^3.3.0
-    flowform-components: 1.1.0
+    flowform-component: 1.1.0
     flowform-shared: 1.1.0
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -7455,7 +7455,7 @@ __metadata:
     "@rollup/plugin-typescript": ^11.1.6
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
-    flowform-components: 1.1.0
+    flowform-component: 1.1.0
     flowform-shared: 1.1.0
     react: ^18.2.0
     react-dom: ^18.2.0

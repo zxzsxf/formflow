@@ -20,12 +20,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "4.8.0",
-    "@formily/antd": "2.2.27",
-    "@formily/core": "2.2.27",
-    "@formily/react": "2.2.27",
-    "@formily/reactive": "2.2.27",
-    "@formily/reactive-react": "2.2.27",
-    "@formily/shared": "2.2.27",
     "antd": "4.22.8",
     "classnames": "2.3.1",
     "dayjs": "^1.11.10",
@@ -69,6 +63,12 @@
     "webpack-dev-server": "^4.15.1"
   },
   "peerDependencies": {
+    "@formily/antd": "2.2.27",
+    "@formily/core": "2.2.27",
+    "@formily/react": "2.2.27",
+    "@formily/reactive": "2.2.27",
+    "@formily/reactive-react": "2.2.27",
+    "@formily/shared": "2.2.27",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
