@@ -8096,7 +8096,7 @@ __metadata:
     rollup: ^2.79.0
     typescript: ^5.4.4
   bin:
-    flowform: dist/cli.js
+    ff-cli: ./dist/bin/index.js
   languageName: unknown
   linkType: soft
 

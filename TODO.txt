@@ -2,38 +2,129 @@ TODO：
 MicroApp测试工程搭建
 流水线搭建
 lpm搭建
+洗数工具
+接口props生成工具
+基础工具库封装
 云搭 + go
 云搭：小程序 + 表单
 go：远程组件 + 大屏
 
+1. formflow/example
+【DONE】feat：playground搭建
 
-1. flowform/example
-feat：playground搭建
-
-2. flowform/pc
-feat：FormLayout
-feat：FormItem-decorater
+2. formflow/pc
+【DONE】feat：FormLayout
+【DONE】feat：FormItem-decorater
 feat：FormPropsProvider
 feat：FormSchemaProvider
-feat：表单回显能力
-feat：表单多状态
+【later】feat：表单回显能力
+【later】feat：表单多状态
 
-3.flowform/component
-feat：组件阅读态能力
+3.formflow/component
+【DONE】feat：组件阅读态能力
 feat：微件接入
 
-4.flowform/mobile
-feat：移动端表单FormBase搭建
-feat：移动端表单业务层
+4.formflow/mobile
+【DONE】feat：移动端表单FormBase搭建
+【later】feat：移动端表单业务层
+feat：移动端表单样式适配h5
+feat：兼容性问题解决
+feat：桥能力接入
 
-5.flowform/cli
+5.formflow/cli
 feat：命令行
 feat：服务搭建
 
-6.flowform/loader
+6.formflow/loader
 feat：webpack插件
 
-7.flowform/shared
-8.flowform/docs
+7.formflow/shared
+8.formflow/docs
+
+9.formflow/editor
+表单PC：
+feat：表单editor搭建
+feat：PC表单B端搭建
+feat：h5表单M端搭建
+feat：h5表单AI接入
+feat：表单MCP
+
+10.物料平台
+feat：物料平台搭建
+feat：物料服务
+feat：物料平台打通M端、B端
+feat：物料MCP
+
+------------------------------------------------------------------------------
+
+@formflow：
+
+@formflow/cli          // CLI工具
+@formflow/components   // 组件库
+@formflow/docs        // 文档
+@formflow/pc          // PC端表单
+@formflow/mobile      // 移动端表单
+@formflow/loader      // 加载器插件
+@formflow/shared      // 共享包
+
+
+------------------------------------------------------------------------------
+
+@formflow-editor // PC表单编辑器（搭建：PC表单、B端组件config面板）
+
+@formflow/designer  // 表单编辑器core
+@formflow/widgets // PC表单编辑器物料
+@formflow/preview  // B端表单预览
+@formflow/comPanel // B端表单物料面板
+@formflow/configPanel // B端表单配置面板
+
+
+
+
+
+页面：
+1.PC端表单搭建页面：PC表单B端
+PC端widget（source、config schema） + @formflow/designer + @formflow/cli（工程schema存储 & 加载）
+ + 接口搭建field展示 & 编辑页面 + lpm接入 + AI表单schema生成 + 表单MCP
+
+2.h5表单搭建M端页面：h5表单M端
+物料平台 + h5微件 & 微件加载器 + preview（h5表单预览器，可以放在@formflow/mobile中）+ 组件Config服务 
+ + @formflow/designer + lpm接入 + h5表单B端
+
+
+------------------------------------------------------------------------------
+
+@logicengine：
+
+@logicengine/core      // 逻辑编排引擎
+@logicengine/widgets   // 控件库
+@logicengine/builder   // 可视化搭建
+@logicengine/shared    // 共享包
+
+
+表单：
+PC端：中后台管理
+h5: 用户端流程管理
+
+大屏：
+PC端：可视化报表
+h5: 落地营销页
+
+1.多数据源：数据库、接口、mqtt、websocket
+2.AI：AI chat、表单MCP、物料MCP、设计稿MCP
+3.数据源 -> YAPI字段读取 -> 表单生成
+4.远程组件：微件加载器 & mdf，vue-repl运行时编译
+5.逻辑编排引擎，事件系统
+6.表单多状态，M、B、C端
+7.完善的基建，cli、多端适配、组件 & 微件库。监控、容器bridge、
+8.子表单适配
+9.BI数据清洗，也可以逻辑编排引擎通过脚本控件实现，存储在状态控件，支持持久化
+10.物料开发 & AI流程
+11.自动化测试
+
+
+
+
+
 
 
