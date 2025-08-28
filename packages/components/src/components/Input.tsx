@@ -26,9 +26,9 @@ const InputComponent: React.FC<InputProps> = observer((props) => {
   const field = useField<any>();
   
   // 如果没有字段实例，输出警告
-  if (!field) {
-    console.warn('Input component: field is undefined. Make sure the Input is wrapped with FormItem and has a name prop.');
-  }
+  // if (!field) {
+  //   console.warn('Input component: field is undefined. Make sure the Input is wrapped with FormItem and has a name prop.');
+  // }
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // if (field && typeof field.onInput === 'function') {
@@ -39,17 +39,17 @@ const InputComponent: React.FC<InputProps> = observer((props) => {
     }
   };
 
-  const handleBlur = () => {
-    if (field && typeof field.onBlur === 'function') {
-      field.onBlur();
-    }
-  };
+  // const handleBlur = () => {
+  //   if (field && typeof field.onBlur === 'function') {
+  //     field.onBlur();
+  //   }
+  // };
 
-  const handleFocus = () => {
-    if (field && typeof field.onFocus === 'function') {
-      field.onFocus();
-    }
-  };
+  // const handleFocus = () => {
+  //   if (field && typeof field.onFocus === 'function') {
+  //     field.onFocus();
+  //   }
+  // };
 
   // 使用 field.value 作为受控值，确保响应式更新
   const fieldValue = field?.value;

@@ -9,12 +9,12 @@ import {
   FormLayoutShallowContext,
 } from "../form-layout/form-layout";
 import { Tooltip, Popover, ConfigProvider } from "antd";
-// import {
-//   QuestionCircleOutlined,
-//   CloseCircleOutlined,
-//   CheckCircleOutlined,
-//   ExclamationCircleOutlined,
-// } from "@ant-design/icons";
+import {
+  QuestionCircleOutlined,
+  CloseCircleOutlined,
+  CheckCircleOutlined,
+  ExclamationCircleOutlined,
+} from "@ant-design/icons";
 import "./style.less";
 
 export interface IFormItemProps {
@@ -88,9 +88,10 @@ const useFormItemLayout = (props: IFormItemProps) => {
     feedbackIcon: props.feedbackIcon,
     feedbackLayout: props.feedbackLayout ?? layout.feedbackLayout ?? "loose",
     tooltipLayout: props.tooltipLayout ?? layout.tooltipLayout ?? "icon",
-    // tooltipIcon: props.tooltipIcon ?? layout.tooltipIcon ?? (
-    //   <QuestionCircleOutlined />
-    // ),
+    tooltipIcon: props.tooltipIcon ?? layout.tooltipIcon ?? (
+      // @ts-ignore
+      <QuestionCircleOutlined />
+    ),
   };
 };
 
@@ -125,12 +126,14 @@ function useOverflow<
     contentRef,
   };
 }
-
-// const ICON_MAP = {
-//   error: <CloseCircleOutlined />,
-//   success: <CheckCircleOutlined />,
-//   warning: <ExclamationCircleOutlined />,
-// };
+const ICON_MAP = {
+// @ts-ignore
+  error: <CloseCircleOutlined />,
+// @ts-ignore
+  success: <CheckCircleOutlined />,
+// @ts-ignore
+  warning: <ExclamationCircleOutlined />,
+};
 
 export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
   children,
@@ -212,8 +215,8 @@ export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
               [`${prefixCls}-help`]: true,
             })}
           >
-            {/* {ICON_MAP[feedbackStatus]}  */}
-            {feedbackText}
+            {/* @ts-ignore */}
+            {ICON_MAP[feedbackStatus]} {feedbackText}
           </div>
         }
         visible={!!feedbackText}
@@ -364,7 +367,7 @@ export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
                 !!feedbackIcon,
             })}
           >
-            <FormLayoutShallowContext.Provider value={undefined}>
+            <FormLayoutShallowContext.Provider value={null as any}>
               {formatChildren}
             </FormLayoutShallowContext.Provider>
             {feedbackIcon && (
@@ -401,9 +404,6 @@ export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
 export const FormItem: ComposeFormItem = connect(
   BaseItem,
   mapProps((props, field) => {
-    console.log('formItem field', field);
-    console.log('formItem props', props);
-    console.log('formItem isVoidField(field)', isVoidField(field));
     if (isVoidField(field))
       return {
         label: field.title || props.label,
