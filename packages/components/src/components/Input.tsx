@@ -59,8 +59,8 @@ const InputComponent: React.FC<InputProps> = observer((props) => {
       {...restProps}
       value={fieldValue || ''}
       onChange={handleChange}
-      onBlur={handleBlur}
-      onFocus={handleFocus}
+      // onBlur={handleBlur}
+      // onFocus={handleFocus}
     />
   );
 });
