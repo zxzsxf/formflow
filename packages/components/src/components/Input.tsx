@@ -39,17 +39,17 @@ const InputComponent: React.FC<InputProps> = observer((props) => {
     }
   };
 
-  // const handleBlur = () => {
-  //   if (field && typeof field.onBlur === 'function') {
-  //     field.onBlur();
-  //   }
-  // };
+  const handleBlur = () => {
+    if (field && typeof field.onBlur === 'function') {
+      field.onBlur();
+    }
+  };
 
-  // const handleFocus = () => {
-  //   if (field && typeof field.onFocus === 'function') {
-  //     field.onFocus();
-  //   }
-  // };
+  const handleFocus = () => {
+    if (field && typeof field.onFocus === 'function') {
+      field.onFocus();
+    }
+  };
 
   // 使用 field.value 作为受控值，确保响应式更新
   const fieldValue = field?.value;
@@ -59,8 +59,8 @@ const InputComponent: React.FC<InputProps> = observer((props) => {
       {...restProps}
       value={fieldValue || ''}
       onChange={handleChange}
-      // onBlur={handleBlur}
-      // onFocus={handleFocus}
+      onBlur={handleBlur}
+      onFocus={handleFocus}
     />
   );
 });
