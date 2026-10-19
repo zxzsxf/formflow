@@ -14,7 +14,7 @@
     "clean": "rimraf dist"
   },
   "dependencies": {
-    "flowform-component": "1.1.0",
+    "flowform-component": "1.1.4",
     "flowform-shared": "1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,6 +29,9 @@
     "rollup": "^3.29.4"
   },
   "peerDependencies": {
+    "@formily/core": "2.2.27",
+    "@formily/react": "2.2.27",
+    "@formily/reactive": "2.2.27",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

@@ -17,7 +17,7 @@ export default defineConfig({
       sourcemap: true
     }
   ],
-  external: ['react', 'react-dom', 'flowform-component', 'flowform-shared'],
+  external: ['react', 'react-dom', 'react-error-boundary', 'flowform-component', 'flowform-shared', '@formily/core', '@formily/react', '@formily/reactive'],
   plugins: [
     nodeResolve(),
     commonjs(),
@@ -25,4 +25,4 @@ export default defineConfig({
       tsconfig: './tsconfig.json'
     })
   ]
-}); 
+});
