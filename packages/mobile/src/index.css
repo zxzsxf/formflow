@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.flowform-mobile {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.flowform-mobile input {
+  min-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flowform-mobile-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.flowform-mobile-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}

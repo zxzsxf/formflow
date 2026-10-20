@@ -13,7 +13,8 @@
     "flowform-mobile": "workspace:*",
     "flowform-pc": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remote-component-loader": "file:../../../remote-component"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",

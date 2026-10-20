@@ -27,4 +27,28 @@ export interface FormState {
   errors: { [key: string]: string };
   isValid: boolean;
   isDirty: boolean;
-} 
+}
+
+export interface LowCodeComponentLock {
+  remoteName: string;
+  version: string;
+  configVersion: number;
+}
+
+export interface LowCodeSchemaNode {
+  type: string;
+  title?: string;
+  required?: boolean;
+  properties?: Record<string, LowCodeSchemaNode>;
+  'x-component'?: string;
+  'x-decorator'?: string;
+  'x-component-props'?: Record<string, unknown>;
+}
+
+export interface LowCodePublishedForm {
+  id: string;
+  title: string;
+  version: number;
+  schema: LowCodeSchemaNode;
+  componentLocks: Record<string, LowCodeComponentLock>;
+}

@@ -8,11 +8,13 @@ import CustomComponentsExample from './examples/CustomComponentsExample';
 import BasicComponentForm from './playground/component/BasicComponentForm';
 import BasicFormLayout from './playground/pc/BasicFormLayout';
 import BasicMobileForm from './playground/mobile/BasicMobileForm';
+import MobileLowCodeExample from './examples/MobileLowCodeExample';
 function App() {
   const [activeExample, setActiveExample] = useState('');
 
   const examples = [
     { id: 'mobile', name: '基础mobile表单', component: BasicMobileForm },
+    { id: 'lowcode', name: '低代码 mobile 验证', component: MobileLowCodeExample },
     { id: 'layout', name: '基础表单布局', component: BasicFormLayout },
     { id: 'basic', name: '基础组件表单demo', component: BasicComponentForm },
     // { id: 'basic', name: '基础表单', component: BasicFormExample },
@@ -53,4 +55,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

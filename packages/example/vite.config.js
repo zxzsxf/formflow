@@ -43,10 +43,11 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true
+    open: true,
+    proxy: { '/micro': 'http://localhost:1001' }
   },
   build: {
     outDir: 'dist',
     sourcemap: true
   }
-}); 
+});
